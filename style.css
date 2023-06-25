@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+#title, #theDate1, #theDate2, #theDate3{
+    font-family: "Alice", serif;
+}
+#title, #youGot, #name, #theDate1, #theDate2, #theDate3, #ending{
+    text-align: center;
+}
+#youGot, #name,  #ending{
+    font-family: "Playfair Display SC", serif;
+}
+#ending{
+    height: 94px;
+    display:flex;
+    align-items: center;
+}
+/* The top part */
+main{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+
+    padding-bottom: 120px;
+    gap: 20px;
+    padding-top: 25px;
+}
+
+
+#randomizer{
+    width: 400px;
+    height: 50px;
+
+    font-size: 30px;
+    font-style: normal;
+    font-family: "Alice", serif;
+
+    background-color: yellow;
+    color:black;
+
+    border-radius: 15px;
+    transition: 0.15s;
+}
+
+#randomizer:hover{
+    background-color: black;
+    color:yellow;
+}
+
+
+
+/*
+*
+*
+* The dating scene */
+
+/* The dater */
+.dater{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    align-items: center;
+}
+
+#dater{
+    padding-top: 10px;
+    object-fit: cover;
+    width: 450px;
+    height: 550px;
+}
+
+/* The ending */
+.ending{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap:10px;
+}
+
+#bed{
+    object-fit: cover;
+    width: 450px;
+    height: 450px;
+}
+
+.ending .explanation{
+    width:75%;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+#theDate1, #theDate2, #theDate3{
+    width: 100%;
+    font-size: 25px;
+}
