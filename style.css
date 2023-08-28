@@ -71,6 +71,7 @@ main{
 
 
 
+
 /*
 *
 *
@@ -87,9 +88,11 @@ main{
 
 #dater{
     padding-top: 10px;
-    object-fit: cover;
-    width: 450px;
-    height: 550px;
+    object-fit: fill;
+    object-position: top;
+    width: 500px;
+    height: 500px;
+    visibility: hidden;
 }
 
 /* The ending */
@@ -100,12 +103,15 @@ main{
     align-items: center;
 
     gap:10px;
+    transition: 0.5s;
 }
 
 #bed{
     object-fit: cover;
+    object-position: top;
     width: 450px;
     height: 450px;
+    visibility: hidden;
 }
 
 .ending .explanation{
