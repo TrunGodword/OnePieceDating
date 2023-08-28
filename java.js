@@ -15,7 +15,7 @@ function ranNum(min, max) {
 let thedate;
 
 function randomize(){
-    thedate = ranNum(20,20);
+    thedate = ranNum(0,20);
     switch(thedate){
         case 1: 
         youGot.innerText = "Your dater is:";
